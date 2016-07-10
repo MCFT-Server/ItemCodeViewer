@@ -24,7 +24,7 @@ public class EventListener implements Listener {
 	
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		if (sender instanceof ConsoleCommandSender) {
-			sender.sendMessage(new TranslationContainer(TextFormat.RED + "commands.generic.ingame"));
+			sender.sendMessage(new TranslationContainer(TextFormat.RED + "%commands.generic.ingame"));
 			return true;
 		}
 		if (!CodeViewer.viewers.contains(sender.getName())) {
