@@ -1,0 +1,15 @@
+name: ItemCodeViewer
+main: itemcodeviewer.Main
+author: maru
+version: "1.0.0"
+api: ["1.0.0"]
+
+commands:
+ viewcode:
+  usage: /viewcode
+  description: View item's code that you pick.
+  permission: itemcodeviewer.commands.viewcode
+
+permissions:
+ itemcodeviewer.commands.viewcode:
+  default: true
